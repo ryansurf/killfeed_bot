@@ -1,7 +1,7 @@
 # killfeed_bot
 
 ## Description
-This app creates a Discord killfeed bot for the game DayZ. The code parses through the server's logs on Nitrado(server hosting service) and when a PvP kill is detected,
+This app creates a Discord killfeed bot for the game DayZ for Ps4(although I think other platforms will work too, you have to change the end of the URL variable accordingly). The code parses through the server's logs on Nitrado(server hosting service) and when a PvP kill is detected,
 it sends a message of the kill to a discord guild channel. It also has a command that returns the amount of players currently on the server, along with their
 gamertags(called by "!players").
 
