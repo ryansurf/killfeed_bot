@@ -13,7 +13,7 @@ You must obtain the following information to be stored in the .env file:
   - **CHANNEL**: The channel in your guild you would like your killfeed messages to output to
   - **PING_CHANNEL**: Channel where the ping(!players) commands will be outputted to
   - **NITRADO_TOKEN**: Token of your Nitrado server so you can obtain access to your logs
-  - **URL**: URL of you Nitrado server's log(s) you want
+  - **URL**: URL of you Nitrado server's log(s) you want. Will look like: https://api.nitrado.net/services/{NITRADO_ID}/gameservers/file_server/download?file=/games/{SERVER_ID/noftp/dayzps/config/DayZServer_PS4_x64.ADM
   - **TIME_WAIT**: How much time between the kill and message sent to the discord(in minutes)
 
 ## How to use
