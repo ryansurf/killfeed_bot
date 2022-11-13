@@ -19,7 +19,7 @@ URL = os.getenv('URL')
 # txt file to write to
 TXT_FILE = os.getenv('TXT_FILE')
 KILL_WAIT = os.getenv('KILL_WAIT')
-TIME_WAIT = os.getenv('TIME_WAIT')
+TIME_WAIT = int(os.getenv('TIME_WAIT'))
 
 # keep track of last kill 
 
