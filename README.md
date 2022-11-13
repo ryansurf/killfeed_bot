@@ -16,3 +16,10 @@ You must obtain the following information to be stored in the .env file:
   - **URL**: URL of you Nitrado server's log(s) you want
   - **TIME_WAIT**: How much time between the kill and message sent to the discord(in minutes)
 
+## How to use
+
+Once you invite the bot to your discord(s), you're ready to go!
+
+Calling the bot with !players will output something like:
+
+![Alt text](images/Screen Shot 2022-11-12 at 6.08.36 PM.png?raw=true "Title")
