@@ -16,6 +16,9 @@ You must obtain the following information to be stored in the .env file:
   - **URL**: URL of you Nitrado server's log(s) you want. Will look like: https://api.nitrado.net/services/{NITRADO_ID}/gameservers/file_server/download?file=/games/{SERVER_ID/noftp/dayzps/config/DayZServer_PS4_x64.ADM You must obtain your Nitrado ID and Server ID.
   - **TIME_WAIT**: How much time between the kill and message sent to the discord(in minutes)
 
+Once you have done this, run main.py. A hosting service(https://www.writebots.com/discord-bot-hosting/) can be used, or the bot can be ran on a any machine that you are willing to keep running as long as you want your bot up(I run mine on a Raspberry Pi that is online 24/7, and push the code
+out the terminal with screen(https://linuxize.com/post/how-to-use-linux-screen/).
+
 ## How to use
 
 Once you invite the bot to your discord(s), you're ready to go!
