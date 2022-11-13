@@ -26,7 +26,6 @@ def kill_string(NITRADO_TOKEN, URL, TXT_FILE):
     #check each line for player killed by another player. Killed if "DEAD" and "by Player" or "killed by" in line(have to see actual kill in logs to make sure)
     for line in log_lines:
         # adjust to find both players
-        #line = '19:12:05 | Player "g352dl428" (DEAD) (id=yFMx3zRIDvLDU4fg2WsfMhUwXF2JXqAxEGFauBcOphc= pos=<1768.7, 7208.1, 232.0>) killed by Player "AkaUnagomi_test" (id=mzCeNoLIUfgG8ul-tpllzw8kWlF2dXkNjUBtGTWTam4= pos=<1764.2, 7207.7, 232.2>) with SSG 82 from 4.53196 meters' 
         if line.count('"') >= 4 and "killed" in line:
             killed_txt = re.sub(r'\([^)]*\)', '', line)
             # if killed_txt in kills.txt file we continue(kill has already been documented, keep looking for more kills). Else if it is a new kill, we break
@@ -62,7 +61,7 @@ def check_txt(line, txtFile):
             return ''
     return line
 
-# adds kill to txt file to wait twnety minutes
+# adds kill to txt file to wait {TIME_WAIT} minutes
 def add_twenty(line, waitTxt):
     with open(waitTxt, "a") as f:
         time = str(datetime.now())
@@ -76,7 +75,7 @@ def check_twenty(waitTxt, TIME_WAIT):
         for line in f:
             time_kill = line.split("||",1)[1].strip()
             line_time = datetime.strptime(time_kill, "%Y-%m-%d %H:%M:%S.%f")
-            # check if time greater than 20 
+            # check if time greater than {TIME_WAIT} 
             timedelta = cur_time - line_time
             minutes = timedelta.seconds / 60
             if minutes >= TIME_WAIT:
@@ -84,7 +83,7 @@ def check_twenty(waitTxt, TIME_WAIT):
     return delete_lines
         
 
-# deletes lines in txt file when minutes >= 20
+# deletes lines in txt file when minutes >= {TIME_WAIT}
 def delete_lines(waitTxt, delete_lines):
     with open(waitTxt, "r") as f:
         lines = f.readlines()
