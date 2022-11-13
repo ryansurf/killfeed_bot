@@ -22,5 +22,5 @@ Once you invite the bot to your discord(s), you're ready to go!
 
 Calling the bot with !players will output something like:
 
-https://github.com/ryansurf/killfeed_bot/blob/master/images/Screen%20Shot%202022-11-12%20at%206.08.36%20PM.png?raw=true![image](https://user-images.githubusercontent.com/94500732/201502380-48efef7d-97b0-49cf-bbe0-075580840898.png)
+![alt text](https://github.com/ryansurf/killfeed_bot/blob/master/images/Screen%20Shot%202022-11-12%20at%206.08.36%20PM.png?raw=true![image](https://user-images.githubusercontent.com/94500732/201502380-48efef7d-97b0-49cf-bbe0-075580840898.png)
 
